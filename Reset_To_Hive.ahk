@@ -29,9 +29,6 @@ SmoothMouseMove(targetX, targetY, speed := 50)
     MouseMove, %targetX%, %targetY%, 0
 }
 
-; =========================
-; RESET TO HIVE FUNCTION
-; =========================
 ResetToHive()
 {
     global macroRunning, settingsFile, speedReady, detectedSpeed, pToken, sprinklerActive
@@ -385,4 +382,5 @@ ScreenCapture(x, y, w, h, filename)
         Gdip_SaveBitmapToFile(pBitmap, filename)
         Gdip_DisposeImage(pBitmap)
     }
+
 }
